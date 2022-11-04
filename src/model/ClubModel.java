@@ -129,7 +129,7 @@ public class ClubModel {
 			//psmt = conn.prepareStatement(sql);
 			
 			String sql = "call sp_club_list()";
-			psmt = conn.prepareStatement(sql);
+			psmt = conn.prepareCall(sql);
 			
 			log.info(">>> " + psmt);
 			
